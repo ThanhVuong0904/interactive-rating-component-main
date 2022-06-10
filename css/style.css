@@ -10,6 +10,14 @@
 
     --size-radius: 5rem
 }
+
+.attribution { 
+    margin-top: 20px;
+    font-size: 13px; 
+    text-align: center; 
+    color: var(--White);
+}
+    .attribution a { color: hsl(228, 45%, 44%); }
 * {
     padding: 0;
     margin: 0;
@@ -38,6 +46,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .container {
@@ -50,18 +59,6 @@ body {
     background-color: var(--DarkBlue);
     overflow: hidden;
 }
-/* 
-.container::after {
-    position: absolute;
-    content: "";
-    top: -40%;
-    left: 0;
-    background-color: var(--DarkBlue);
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
-} */
 
 .card-start {
     display: inline-flex;
@@ -156,4 +153,15 @@ body {
 
 .container.success .card-desc {
     text-align: center;
+}
+
+@media screen and (max-width: 767.98px) {
+    :root {
+        --size-radius: 4rem
+    }
+    .container {
+        width: 300px;
+        height: 400px;
+        padding: 20px;
+    }      
 }
